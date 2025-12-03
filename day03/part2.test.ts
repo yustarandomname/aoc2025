@@ -1,5 +1,5 @@
 import { assertEquals } from '@std/assert/equals';
-import { largestPowerValuePart2 } from './part2.ts';
+import { largestPowerValuePart2, part2 } from './part2.ts';
 
 Deno.test('Largest power value size 3', () => {
   assertEquals(
@@ -16,16 +16,6 @@ Deno.test('Largest power value size 3', () => {
     largestPowerValuePart2('234234234234278'.split('').map(Number)),
     434234234278
   );
-
-  // 234234234234274844
-  // 3434343474844
-  // [4]44474844
-  // [4]4474844
-  // [4]474844
-  // [4]74844
-  // 7[4]844
-  // 78[4]4
-  // 784
 
   assertEquals(
     largestPowerValuePart2('818181911112111'.split('').map(Number)),
